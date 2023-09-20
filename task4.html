@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+</head>
+<style>
+    h1{
+        padding: 30px auto;
+        color: rgb(209, 0, 160);
+        background-color: black;
+        width: fit-content;
+        margin: auto auto;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .images{
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        padding: 50px 20px;
+    }
+    .main{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+       margin: auto auto;
+        padding: 0px 20px;
+        color: crimson;
+        background: linear-gradient(150deg, white,rgb(156, 195, 253));
+    }
+</style>
+<body>
+   <h1> Fruits </h1>
+   <div class="images">
+    <img src="./Images/apple.png" width="50px" height="50px">
+    <img src="./Images/banana.png" width="50px" height="50px">
+    <img src="./Images/cherry.png" width="50px" height="50px">
+    <img src="./Images/dragon-fruit.png" width="50px" height="50px">
+    <img src="./Images/mango.png" width="50px" height="50px">
+    <img src="./Images/kiwi.png" width="50px" height="50px">
+    <img src="./Images/orange.png" width="50px" height="50px">
+    <img src="./Images/watermelon.png" width="50px" height="50px">
+    <img src="./Images/grapes.png" width="50px" height="50px">
+    <img src="./Images/sapodilla.png" width="50px" height="50px">
+   </div>
+   <div class="main">
+    <h4 id="fruit"></h4>
+   </div>
+
+
+
+
+</body>
+<script>
+    const fruits = ["Apple", "Banana", "Cherry", "Dragon", "Mango", "Kiwi", "Orange", "Watermelon", "Grapes", "Chickoo"];
+document.getElementById("fruit").innerHTML = fruits[0]+ " " + " " +  fruits[1] + " " + " " + fruits[2]+ " " + " " + fruits[3]+ " " + " " + fruits[4]+ " " + " " + fruits[5]+ " " + " " + fruits[6]+ " " + " " + fruits[7]+ " " + " " + fruits[8]+ " " + " " + fruits[9] ;
+</script>
+</html>
